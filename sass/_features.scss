@@ -1,0 +1,41 @@
+.q-features{
+  
+    max-width: 1080px;
+    margin: 90px auto 90px auto;
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+
+    justify-content: space-between;
+    align-items: baseline;
+    &__demo{
+        max-width: 410px;
+        margin: 0 auto 20px auto;
+     
+    }
+        a{
+            color: #5D64D2;
+            font-weight: bold ;
+            text-transform: uppercase;
+        }
+    &__text{
+        line-height: 24px;
+    }    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
