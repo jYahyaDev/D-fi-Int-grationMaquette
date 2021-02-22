@@ -25,6 +25,12 @@ a {
   background-color: #151B2B;
   overflow: hidden;
 }
+@media screen and (max-width: 780px) {
+  .q-hero {
+    height: auto;
+    padding: 20px;
+  }
+}
 .q-hero__main {
   display: flex;
   justify-content: space-between;
@@ -35,6 +41,12 @@ a {
   max-width: 470px;
   color: white;
   animation: slideIN 2s;
+}
+@media screen and (max-width: 780px) {
+  .q-hero__content {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 .q-hero__content h1 {
   font-family: "HK Grotesk", sans-serif;
@@ -55,6 +67,11 @@ a {
 .q-hero__imgHero {
   max-width: 510px;
   animation: slideIN 3s;
+}
+@media screen and (max-width: 780px) {
+  .q-hero__imgHero {
+    display: none;
+  }
 }
 
 .q-btn {
@@ -110,6 +127,19 @@ a {
   display: flex;
   flex-direction: column;
 }
+@media screen and (max-width: 780px) {
+  .q-prez {
+    padding: 20px;
+  }
+  .q-prez img {
+    width: 100%;
+    height: auto;
+  }
+  .q-prez pre {
+    width: 100%;
+    overflow: auto;
+  }
+}
 .q-prez h2 {
   font-size: 32px;
   font-family: "HK Grotesk", sans-serif;
@@ -138,10 +168,17 @@ a {
   border-radius: 5px;
   width: 90%;
   margin: 0 auto 40px auto;
+  overflow: auto;
 }
 .q-prez__ctactions {
   display: flex;
   justify-content: center;
+}
+@media screen and (max-width: 780px) {
+  .q-prez__ctactions {
+    margin: 0 auto;
+    padding: 20px;
+  }
 }
 
 .span {
@@ -159,17 +196,17 @@ a {
 }
 
 .slide {
-  animation: slideUP 2s;
+  animation: slideUP 3s ease-in-out;
 }
 
 @keyframes slideUP {
   0% {
-    opacity: 0.1;
-    transform: translateY(250px);
+    opacity: 0;
+    transform: translate3D(0, -10px, 0);
   }
   100% {
     opacity: 1;
-    transform: translateY(0px);
+    transform: none;
   }
 }
 .q-features {
@@ -181,6 +218,17 @@ a {
   gap: 10px;
   justify-content: space-between;
   align-items: baseline;
+}
+@media screen and (max-width: 780px) {
+  .q-features {
+    grid-template-columns: 1fr;
+    margin: 40px auto 40px auto;
+    padding: 20px;
+    text-align: center;
+  }
+  .q-features img {
+    max-width: 200px;
+  }
 }
 .q-features__demo {
   max-width: 410px;
@@ -198,6 +246,14 @@ a {
 .q-partners {
   max-width: 710px;
   margin: 0 auto 55px auto;
+}
+@media screen and (max-width: 780px) {
+  .q-partners {
+    width: 90%;
+  }
+  .q-partners img {
+    max-width: 90px;
+  }
 }
 .q-partners h2 {
   text-align: center;

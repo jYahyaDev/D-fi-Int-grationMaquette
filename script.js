@@ -19,3 +19,26 @@ const img = document.querySelector('.q-prez__img');
   });
 
   observer.observe(target);
+
+const features = document.querySelector('.q-features');
+const demo = document.querySelectorAll('.q-features__demo');
+
+
+let options = {
+  root:'',
+  threshold:0.2
+}
+
+function callback(entries) {
+  entries.forEach(entry =>{
+    if(entry.intersectionRatio >0){
+      demo.forEach(div=>{
+        div.classList.remove('invisible');
+        div.classList.add('slide');
+      })
+    }
+  })
+}
+
+let observer2 = new IntersectionObserver(callback);
+observer2.observe(features);

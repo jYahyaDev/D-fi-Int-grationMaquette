@@ -6,14 +6,28 @@
     grid-template-columns: repeat(2,minmax(0,1fr));
     grid-template-rows: 1fr 1fr;
     gap: 10px;
-
     justify-content: space-between;
     align-items: baseline;
+
+
+    @media screen and (max-width:780px){
+        grid-template-columns: 1fr;
+        margin: 40px auto 40px auto;
+        padding: 20px;
+        text-align: center;
+        img{
+           max-width:200px;
+        }
+    }
+
+
     &__demo{
         max-width: 410px;
         margin: 0 auto 20px auto;
-     
+      
+
     }
+  
         a{
             color: #5D64D2;
             font-weight: bold ;
@@ -25,17 +39,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 }
+
 
